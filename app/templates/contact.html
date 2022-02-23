@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block main %}
+<link href="/static/css/contact.css" rel="stylesheet">
+<h1>Cantact Form</h1>
+<hr>
+<p>Fill in this form to contact the site owners</p>
+<form method="POST" action="">
+    <fieldset id="name">
+        <p>{{form.name.label}} <b>(Required)</b></p>
+        <p>Please enter your full name</p>
+        {{form.name(class='form')}}
+    </fieldset>
+    <fieldset id="email">
+        <p>{{form.email.label}} <b>(Required)</b></p>
+        <p>Please enter your e-mail address</p>
+        {{form.email(class='form')}}
+    </fieldset>
+    <fieldset id="subject">
+        <p>{{form.subject.label}} <b>(Required)</b></p>
+        <p>Please Enter the subject of your message</p>
+        {{form.subject(class='form')}}
+    </fieldset>
+    <fieldset id="message">
+        <p>{{form.message.label}} <b>(Required)</b></p>
+        <p>Please Enter the mesaage you would like to send</p>
+        {{form.message(class='forms')}}
+    </fieldset>
+    <fieldset>
+        {{form.csrf_token}}
+    </fieldset>
+    <fieldset id="submit">
+        {{form.submit(class='button')}}
+    </fieldset>
+    
+</form>
+{% endblock %}

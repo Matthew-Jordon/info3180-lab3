@@ -1,0 +1,27 @@
+b {
+   color: red; 
+}
+
+#name, #subject, #email, #message {
+    display: flex;
+    flex-direction: column;
+    width: 25pc;
+    margin-bottom: 20px;
+}
+
+.form {
+    height: 2.3em;
+    border: thin inset rgb(202, 202, 202);
+}
+.forms {
+    border: thin inset rgb(202, 202, 202);
+}
+
+.button {
+    width: 6pc;
+    height: 2.2pc;
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+}
